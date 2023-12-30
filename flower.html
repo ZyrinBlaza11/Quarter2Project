@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<link rel="stylesheet" href="flower.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		</head>
+		<body>
+			<div class="topnav">
+		<a class="active" 
+		<a href="blaza_Quarter2Proj.html">Home</a>
+		<a href="museumsss.html">Art Gallery</a>
+		<a href="animalfunfacts.html">Fun Facts About Animals</a>
+		<a href="flower.html">Flowers</a>
+
+
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 10</div>
+			<img src="https://i.pinimg.com/474x/ae/eb/e5/aeebe5a700a31d57c1760d13c544eb55.jpg" style="width:100%">
+			<div class="text">This is a Sunflower</div>
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 10</div>
+			<img src="https://i.pinimg.com/474x/6b/96/28/6b96283128c5f8dbf79500d60dec375a.jpg" style="width:100%">
+			<div class="text">This is a Daisy</div>
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 10</div>
+			<img src="https://i.pinimg.com/474x/fb/a5/df/fba5dfb4ee9ea1978c8592c711c41e75.jpg" style="width:100%">
+			<div class="text">This is a Lily</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">4 / 10</div>
+			<img src="https://i.pinimg.com/474x/05/2d/5d/052d5db977fd926afbc97b4bf8edc47a.jpg" style="width:100%">
+			<div class="text">This is a Dafodil</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">5 / 10</div>
+			<img src="https://i.pinimg.com/474x/73/f6/50/73f6508cbaa25ece37b67c58125e6342.jpg" style="width:100%">
+			<div class="text">This is a Gumamela</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">6 / 10</div>
+			<img src="https://i.pinimg.com/474x/c5/e9/77/c5e977624ac9172da714b98d22e21bde.jpg" style="width:100%">
+			<div class="text">This is an Orchid</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">7 / 10</div>
+			<img src="https://i.pinimg.com/474x/ad/88/01/ad8801fb352cc25c34bb6bf59a217b8e.jpg" style="width:100%">
+			<div class="text">This is a Tulip</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">8 / 10</div>
+			<img src="https://i.pinimg.com/474x/a8/a2/14/a8a214ce65fd052141e6243f0e6c898f.jpg" style="width:100%">
+			<div class="text">This is a Rose</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">9 / 10</div>
+			<img src="https://i.pinimg.com/564x/43/4d/86/434d86a42693046cf518d1dd5549e88a.jpg" style="width:100%">
+			<div class="text">This is a Lily of the Valley</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">10 / 10</div>
+			<img src="https://i.pinimg.com/564x/8f/dd/a2/8fdda216069e4240fe0ea01835cd3dc9.jpg" style="width:100%">
+			<div class="text">This is a Spider Lily</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+	</body>
+</html> 
